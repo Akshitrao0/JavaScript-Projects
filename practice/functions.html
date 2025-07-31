@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Functions in JavaScript
+    </h1>
+
+    <script>
+        function dostuff(){
+
+            var message = "this is a message"
+            var myupper = message.toUpperCase();
+            console.log(message);
+            console.log(myupper);
+        }
+
+        //dostuff();
+
+        console.log(Math.random());
+
+        function randomint(min,max){
+            var numofval = max - min +1;
+            var randomnum = Math.random();
+            var randval = Math.floor(randomnum*numofval);
+            var finalnum = min + randval;
+            console.log(finalnum);
+        }
+
+        randomint(10,20);
+
+        function randomint2(min,max){
+            return Math.floor((max-min+1)*Math.random())+min;
+        }
+        randomint2(10,20);
+
+        console.log ( 6 % 2 );
+
+
+
+    </script>
+</body>
+</html>

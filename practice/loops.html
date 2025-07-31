@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Loops In HTML
+    </h1>
+    <script>
+        /* 
+        var colors = ["red","yellow","blue","green"];
+
+        for( var i =0;  i<colors.length ; i++ ){
+            console.log(colors[i] + '\n')
+        }
+ */
+
+        var incrementor = 0;
+        var text = '';
+
+       while (incrementor < 10) {
+    text += `The incrementor is ${incrementor}, the incrementor squared is ${incrementor * incrementor}\n`;
+    incrementor++;
+}    
+        console.log(text);
+    </script>
+</body>
+</html>

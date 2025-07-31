@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        SEQ-SEL-LOOP
+    </h1>
+    <script>
+
+        var mystring  = "i am really hungry to see the world";
+        console.log(mystring);
+        var mystring1 = mystring.toUpperCase();
+        console.log(mystring1);
+
+
+        var reallylocation = mystring.search('really')
+        console.log(reallylocation);
+
+        var food = ["burger","dosa","idli","curry"]
+        var mystring2 = "I am craving for some"
+        /*  console.log(`${mystring2} ${food[0]}`)
+ */ 
+
+        for(var i=0; i<food.length;i++){
+            var remainder = i % 2;
+
+            if (remainder=== 0 ){
+                var foodUpper = food[i].toUpperCase();
+                console.log(`${mystring2} ${foodUpper}`); 
+            }
+            else{
+                
+            console.log(`${mystring2} ${food[i]}`);
+        
+            }}       
+
+    </script>
+
+</body>
+</html>
