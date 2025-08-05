@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <p>
+         Hello <b> <span id="person"> Chuck </span></b> there.
+    </p>
+    <script>
+        st = document.getElementById('person').innerHTML;
+        window.console && console.log("ST = "+st);
+        alert('Hi there'+st);
+        document.getElementById('person').innerHTML = 'Anit';
+        window.console &&
+            console.dir(document.getElementById('person'));
+    </script>
+    
+</body>
+</html>
